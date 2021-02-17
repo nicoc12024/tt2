@@ -1,0 +1,180 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  width: 100%;
+}
+
+.section-title {
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.boxes-title {
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 1.4rem;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: wheat;
+  padding-bottom: 2rem;
+}
+header h1 {
+  padding: 1rem;
+}
+header ul li {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 6rem;
+  margin-bottom: 0.4rem;
+  background-color: #faf1e0;
+}
+header ul li a {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.profile-description {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: wheat;
+  padding-bottom: 1rem;
+}
+.profile-description img {
+  width: 80%;
+  margin: 0 auto 0.8rem auto;
+}
+.profile-description p {
+  text-align: center;
+  padding: 1rem;
+}
+
+#portfolio .boxes .box {
+  padding: 0 0 2rem 0;
+}
+#portfolio .boxes .box p {
+  text-align: center;
+}
+
+#contact {
+  padding: 2rem;
+  text-align: center;
+  background-color: wheat;
+  border-bottom: 0.5px solid black;
+}
+#contact * {
+  margin-bottom: 1rem;
+}
+#contact h4 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  background-color: wheat;
+  font-weight: bold;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+footer ul {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  header ul {
+    display: flex;
+    flex-direction: row;
+  }
+  header ul li {
+    background-color: transparent;
+    padding: 0.5rem 2rem;
+  }
+  .profile-description {
+    flex-direction: row;
+    padding: 2rem;
+  }
+  .profile-description p {
+    text-align: left;
+    line-height: 1.4;
+  }
+  #portfolio .boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 0 2rem;
+  }
+  footer .link {
+    display: none;
+  }
+  footer ul {
+    display: flex;
+  }
+  footer ul li {
+    padding: 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header ul {
+    display: flex;
+    flex-direction: row;
+  }
+  header ul li {
+    background-color: transparent;
+    padding: 0.5rem 2rem;
+  }
+  .profile-description {
+    flex-direction: row;
+    padding: 2rem;
+  }
+  .profile-description p {
+    text-align: left;
+    line-height: 1.4;
+  }
+  #portfolio .boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 0 2rem;
+  }
+  footer .link {
+    display: none;
+  }
+  footer ul {
+    display: flex;
+  }
+  footer ul li {
+    padding: 0.5rem;
+  }
+}
