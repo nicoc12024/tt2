@@ -75,6 +75,9 @@ header ul li a {
 #portfolio .boxes .box {
   padding: 0 0 2rem 0;
 }
+#portfolio .boxes .box img {
+  padding: 1rem;
+}
 #portfolio .boxes .box p {
   text-align: center;
 }
